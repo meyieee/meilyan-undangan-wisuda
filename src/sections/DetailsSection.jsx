@@ -45,7 +45,7 @@ export default function DetailsSection() {
               </div>
               <div className="space-y-1">
                 <h3 className="font-label-romantic text-label-romantic text-on-surface">Waktu</h3>
-                <p className="font-body-md text-body-md text-on-surface-variant">15.00 WITA - Selesai</p>
+                <p className="font-body-md text-body-md text-on-surface-variant">15.30 WITA - Selesai</p>
               </div>
             </div>
           </div>
