@@ -1,8 +1,8 @@
 import MaterialIcon from "../components/MaterialIcon";
 import heroBg from "../assets/bg.webp";
-
-const FLORAL =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuD_6AIvSa32-WcNm0x5a_-3b8OST51rP9vX7Wfse5xtx_I16n-C4vldyWtdxYUQ2AYsuc8X0CMxhhBQ42FpSnTSwcKHUzYm4wtuxWc6CfqkjXS8t4kIa-l0G-PjO1aIAWe2FWL9F_kBNu2MYFYg6gQd9Nq8lVV2VMVjwS_A40quwIddgoL9eCB_vUvKbDYJkai9VhK1sAJE9ZgZdRUAicKnnT5yWu6iZRJGBpWw3kmQVHO5wxFvkYCKAZBMUb8RIX42ZROW3W7WgTM";
+import tulipBorder from "../assets/fl.webp";
+import lotus from "../assets/gmbr.webp";
+import butterfly from "../assets/kup.webp";
 
 export default function HomeSection() {
   return (
@@ -22,6 +22,24 @@ export default function HomeSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-cream-vellum/50 via-cream-vellum/15 to-surface max-md:from-cream-vellum/55" />
       </div>
 
+      <img
+        alt=""
+        aria-hidden="true"
+        className="absolute left-0 bottom-[22%] sm:bottom-[24%] md:bottom-[26%] h-48 sm:h-52 md:h-56 w-auto opacity-85 pointer-events-none z-0 object-contain object-left"
+        src={tulipBorder}
+        loading="lazy"
+        decoding="async"
+      />
+
+      <img
+        alt=""
+        aria-hidden="true"
+        className="absolute right-4 top-16 md:right-12 md:top-20 w-16 md:w-20 h-auto opacity-70 pointer-events-none z-[1] rotate-12"
+        src={butterfly}
+        loading="lazy"
+        decoding="async"
+      />
+
       <div className="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center gap-stack-md mt-12 md:mt-0 px-2">
         <div
           className="w-16 h-16 rounded-full bg-rose-gold/40 backdrop-blur-sm border border-rose-gold/60 flex items-center justify-center shadow-sm mb-4 animate-pulse"
@@ -35,19 +53,7 @@ export default function HomeSection() {
           Class of 2026
         </div>
 
-        <div className="space-y-4 mt-stack-md relative w-full">
-          <div className="absolute -top-8 -left-4 md:-left-12 w-20 md:w-24 h-20 md:h-24 opacity-60 pointer-events-none hidden md:block">
-            <img
-              alt=""
-              aria-hidden="true"
-              className="w-full h-full object-contain -rotate-[15deg]"
-              src={FLORAL}
-              loading="lazy"
-              decoding="async"
-              style={{ clipPath: "circle(40%)" }}
-            />
-          </div>
-
+        <div className="space-y-4 mt-stack-md w-full">
           <h2 className="font-label-romantic text-label-romantic text-hero-subtitle italic hero-text-shadow">
             You&apos;re Invited to Graduation party of
           </h2>
@@ -59,10 +65,18 @@ export default function HomeSection() {
         </div>
 
         <p className="font-body-md text-body-md text-hero-body max-w-lg mx-auto mt-stack-sm leading-relaxed hero-text-shadow">
-        This milestone is a reflection of the love and support that surrounds me. I invite all of you to cherish this unforgettable moment together.
+          This milestone is a reflection of the love and support that surrounds me. I invite all of you to cherish this unforgettable moment together.
         </p>
 
-        <div className="mt-stack-lg">
+        <div className="mt-stack-lg flex items-center justify-center gap-2 sm:gap-3">
+          <img
+            alt=""
+            aria-hidden="true"
+            className="h-14 md:h-16 w-auto opacity-80 pointer-events-none shrink-0 object-contain"
+            src={lotus}
+            loading="lazy"
+            decoding="async"
+          />
           <a
             href="#details"
             className="ribbon-btn px-8 py-3 rounded-full font-detail-sm text-detail-sm uppercase tracking-widest inline-flex items-center gap-2"

@@ -1,9 +1,7 @@
 import MaterialIcon from "../components/MaterialIcon";
 import MapPlaceholder from "../components/MapPlaceholder";
-
-const FLORAL_BLUR =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuD_6AIvSa32-WcNm0x5a_-3b8OST51rP9vX7Wfse5xtx_I16n-C4vldyWtdxYUQ2AYsuc8X0CMxhhBQ42FpSnTSwcKHUzYm4wtuxWc6CfqkjXS8t4kIa-l0G-PjO1aIAWe2FWL9F_kBNu2MYFYg6gQd9Nq8lVV2VMVjwS_A40quwIddgoL9eCB_vUvKbDYJkai9VhK1sAJE9ZgZdRUAicKnnT5yWu6iZRJGBpWw3kmQVHO5wxFvkYCKAZBMUb8RIX42ZROW3W7WgTM";
-
+import lilies from "../assets/dreamy.webp";
+import lotus from "../assets/gmbr.webp";
 const MAPS_LINK = "https://maps.app.goo.gl/xFyD2uxLgr3wxVHE6";
 
 export default function DetailsSection() {
@@ -12,9 +10,25 @@ export default function DetailsSection() {
       className="py-stack-lg md:py-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto relative"
       id="details"
     >
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] opacity-20 pointer-events-none z-0">
-        <img alt="" aria-hidden="true" className="w-full h-full object-cover blur-sm" src={FLORAL_BLUR} loading="lazy" decoding="async" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] max-w-md h-auto opacity-15 pointer-events-none z-0">
+        <img
+          alt=""
+          aria-hidden="true"
+          className="w-full h-auto object-contain blur-[2px]"
+          src={lilies}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
+
+      <img
+        alt=""
+        aria-hidden="true"
+        className="absolute right-0 top-8 w-12 md:w-16 h-auto opacity-40 pointer-events-none z-0 rotate-6 hidden md:block"
+        src={lotus}
+        loading="lazy"
+        decoding="async"
+      />
 
       <div className="text-center mb-stack-lg relative z-10">
         <h2 className="font-display-accent text-headline-lg text-primary italic">
