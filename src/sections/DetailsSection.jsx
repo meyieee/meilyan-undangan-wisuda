@@ -9,11 +9,11 @@ const MAPS_LINK = "https://maps.app.goo.gl/xFyD2uxLgr3wxVHE6";
 export default function DetailsSection() {
   return (
     <section
-      className="py-stack-lg md:py-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto relative scroll-mt-16"
+      className="py-stack-lg md:py-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto relative"
       id="details"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] opacity-20 pointer-events-none z-0">
-        <img alt="" aria-hidden="true" className="w-full h-full object-cover blur-sm" src={FLORAL_BLUR} />
+        <img alt="" aria-hidden="true" className="w-full h-full object-cover blur-sm" src={FLORAL_BLUR} loading="lazy" decoding="async" />
       </div>
 
       <div className="text-center mb-stack-lg relative z-10">

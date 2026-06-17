@@ -1,5 +1,5 @@
 import MaterialIcon from "../components/MaterialIcon";
-import heroBg from "../assets/bg.png";
+import heroBg from "../assets/bg.webp";
 
 const FLORAL =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuD_6AIvSa32-WcNm0x5a_-3b8OST51rP9vX7Wfse5xtx_I16n-C4vldyWtdxYUQ2AYsuc8X0CMxhhBQ42FpSnTSwcKHUzYm4wtuxWc6CfqkjXS8t4kIa-l0G-PjO1aIAWe2FWL9F_kBNu2MYFYg6gQd9Nq8lVV2VMVjwS_A40quwIddgoL9eCB_vUvKbDYJkai9VhK1sAJE9ZgZdRUAicKnnT5yWu6iZRJGBpWw3kmQVHO5wxFvkYCKAZBMUb8RIX42ZROW3W7WgTM";
@@ -7,7 +7,7 @@ const FLORAL =
 export default function HomeSection() {
   return (
     <section
-      className="relative min-h-[90vh] flex items-center justify-center pt-stack-lg pb-stack-lg px-margin-mobile md:px-gutter overflow-hidden scroll-mt-16"
+      className="relative min-h-[90vh] flex items-center justify-center pt-stack-lg pb-stack-lg px-margin-mobile md:px-gutter overflow-hidden"
       id="home"
     >
       <div className="absolute inset-0 z-0">
@@ -16,6 +16,8 @@ export default function HomeSection() {
           aria-hidden="true"
           className="w-full h-full object-cover object-right md:object-center opacity-80"
           src={heroBg}
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-cream-vellum/50 via-cream-vellum/15 to-surface max-md:from-cream-vellum/55" />
       </div>
@@ -40,6 +42,8 @@ export default function HomeSection() {
               aria-hidden="true"
               className="w-full h-full object-contain -rotate-[15deg]"
               src={FLORAL}
+              loading="lazy"
+              decoding="async"
               style={{ clipPath: "circle(40%)" }}
             />
           </div>

@@ -1,4 +1,4 @@
-import meilyan from "../assets/memey.jpeg";
+import meilyan from "../assets/memey.webp";
 
 const FLORAL =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuD_6AIvSa32-WcNm0x5a_-3b8OST51rP9vX7Wfse5xtx_I16n-C4vldyWtdxYUQ2AYsuc8X0CMxhhBQ42FpSnTSwcKHUzYm4wtuxWc6CfqkjXS8t4kIa-l0G-PjO1aIAWe2FWL9F_kBNu2MYFYg6gQd9Nq8lVV2VMVjwS_A40quwIddgoL9eCB_vUvKbDYJkai9VhK1sAJE9ZgZdRUAicKnnT5yWu6iZRJGBpWw3kmQVHO5wxFvkYCKAZBMUb8RIX42ZROW3W7WgTM";
@@ -9,7 +9,7 @@ const GALLERY_SECOND =
 export default function GallerySection() {
   return (
     <section
-      className="py-stack-lg bg-surface-container-low/50 relative overflow-hidden scroll-mt-16 pb-24 md:pb-stack-lg"
+      className="py-stack-lg bg-surface-container-low/50 relative overflow-hidden pb-stack-lg"
       id="gallery"
     >
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
@@ -35,6 +35,8 @@ export default function GallerySection() {
                 alt="Meilyan Elizabet Siwy"
                 className="w-full aspect-square object-cover block"
                 src={meilyan}
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="font-label-romantic text-center mt-4 text-primary text-lg italic w-full">
@@ -48,6 +50,8 @@ export default function GallerySection() {
                 alt="Graduation details and dreams"
                 className="w-full aspect-square object-cover block"
                 src={GALLERY_SECOND}
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="font-label-romantic text-center mt-4 text-primary text-lg italic w-full">

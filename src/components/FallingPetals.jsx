@@ -13,7 +13,7 @@ export default function FallingPetals() {
         season="spring"
         autoSeason={false}
         intensity={intensity}
-        disableOnMobile={false}
+        disableOnMobile={true}
         respectReducedMotion
         seasonConfig={{
           spring: {

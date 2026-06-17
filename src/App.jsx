@@ -1,6 +1,4 @@
-import Navigation from "./components/Navigation";
-import CoquetteScene from "./components/CoquetteScene";
-import FallingPetals from "./components/FallingPetals";
+import DeferredEffects from "./components/DeferredEffects";
 import HomeSection from "./sections/HomeSection";
 import DetailsSection from "./sections/DetailsSection";
 import GallerySection from "./sections/GallerySection";
@@ -8,17 +6,15 @@ import GallerySection from "./sections/GallerySection";
 export default function App() {
   return (
     <div className="bg-surface text-on-surface font-body-md overflow-x-hidden antialiased">
-      <CoquetteScene />
-      <FallingPetals />
-      <Navigation />
+      <DeferredEffects />
 
-      <main className="pt-16 relative z-10">
+      <main className="relative z-10">
         <HomeSection />
         <DetailsSection />
         <GallerySection />
       </main>
 
-      <footer className="relative z-10 bg-surface-container-low w-full py-stack-lg flex flex-col items-center gap-stack-md text-center mt-stack-lg border-t border-cream-vellum/50 pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-stack-lg">
+      <footer className="relative z-10 bg-surface-container-low w-full py-stack-lg flex flex-col items-center gap-stack-md text-center mt-stack-lg border-t border-cream-vellum/50">
         <div className="font-label-romantic text-label-romantic text-on-surface mb-2">
           Meilyan Elizabet Siwy
         </div>
